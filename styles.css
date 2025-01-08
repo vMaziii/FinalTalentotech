@@ -81,17 +81,19 @@ h2 {
     position: fixed;
     bottom: 10px;
     right: 10px;
-    width: 300px;
+    width: 300px; 
+    max-width: 90%; 
     border: 2px solid #ccc;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 15px;
     border-radius: 8px;
     z-index: 1000;
-}
+    transition: all 0.3s ease; }
+
 
 #carrito h2 {
-    font-size: 18px;
+    font-size: 1.2em;
     margin-bottom: 10px;
 }
 
@@ -99,7 +101,7 @@ h2 {
     list-style: none;
     padding: 0;
     margin: 0;
-    max-height: 150px;
+    max-height: 120px; 
     overflow-y: auto;
 }
 
@@ -107,55 +109,106 @@ h2 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 5px;
+    font-size: 0.9em; 
 }
 
 #total {
-    font-size: 16px;
+    font-size: 1em; 
     font-weight: bold;
     margin-top: 10px;
 }
 
-/* Estilo para el botón de pagar */
-#pagar-carrito  {
+#pagar-carrito{
     background-color: #4CAF50;
     color: white; 
-    padding: 15px 30px; 
-    font-size: 1.2rem; 
-    border: none; 
+    font-size: 0.8em;
+    padding: 8px;
     border-radius: 8px; 
     cursor: pointer;
     transition: all 0.3s ease; 
     width: 100%; 
     margin-top: 20px; 
 }
-
-
 #pagar-carrito:hover {
     background-color: #45a049; 
     transform: scale(1.05); 
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
 #pagar-carrito:active {
     background-color: #388e3c; 
     transform: scale(1); 
 }
 
-
 #vaciar-carrito {
+
     width: 100%;
     background-color: red;
     color: #fff;
     border: none;
-    padding: 10px;
     cursor: pointer;
-    border-radius: 5px;
+    font-size: 0.8em;
+    padding: 8px;
 }
-
 #vaciar-carrito:hover {
     background-color: darkred;
 }
+
+@media (max-width: 768px) {
+    #carrito {
+        width: 40%; 
+        bottom: 0; 
+        right: 0;
+        border-radius: 0; 
+        padding: 10px;
+    }
+
+    #carrito h2 {
+        font-size: 1em; 
+    }
+
+    #carrito-items {
+        max-height: 50px; 
+    }
+
+    #pagar-carrito{
+        background-color: #4CAF50;
+        color: white; 
+        font-size: 0.8em;
+        padding: 8px;
+        border-radius: 8px; 
+        cursor: pointer;
+        transition: all 0.3s ease; 
+        width: 100%; 
+        margin-top: 20px; 
+    }
+    #pagar-carrito:hover {
+        background-color: #45a049; 
+        transform: scale(1.05); 
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    #pagar-carrito:active {
+        background-color: #388e3c; 
+        transform: scale(1); 
+    }
+    
+
+    #vaciar-carrito {
+
+        width: 100%;
+        background-color: red;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-size: 0.8em;
+        padding: 8px;
+    }
+    #vaciar-carrito:hover {
+        background-color: darkred;
+    }
+}
+
 
 
 .enlaceimagen{
@@ -177,7 +230,6 @@ h2 {
     filter: brightness(0.8);
 }
 
-/* Contenedor específico para las pizzas */
 .pizza-contenedor {
     display: flex;
     justify-content: center;
@@ -186,7 +238,6 @@ h2 {
     margin-top: 20px;
 }
 
-/* Tarjetas de pizzas */
 .pizza-card {
     background-color: #f9f9f98a;
     border: 1px solid #ddd;
@@ -280,45 +331,24 @@ h2 {
 
 @media (max_width: 768px){
 
-    #carrito {
-        width: 90%; /* Ajusta el ancho */
-        font-size: 0.9em; /* Reduce el tamaño de texto */
-        margin: 0 auto;
+        #carrito {
+            font-size: 0.9em;
+        }
+    
+        .carrito-item {
+            padding: 8px;
+            font-size: 0.8em;
+        }
+    
+        #pagar-carrito {
+            font-size: 0.9em;
+        }
     }
-
-    #carrito table {
-        width: 100%;
-    }
-
-    #carrito table th, #carrito table td {
-        padding: 5px;
-        font-size: 0.8em;
-    }
-
-    #carrito table th {
-        text-align: left; /* Mejor alineación en pantallas pequeñas */
-    }
-
-    .carrito-header {
-        flex-direction: column; /* Cambia a formato vertical */
-        align-items: flex-start;
-    }
-
-    .carrito-item {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #pagar-carrito {
-        width: 100%; /* Botón ocupa todo el ancho */
-        font-size: 1em;
-    }
-
-
+    
+    
     .mapa{
         height: 100px;
     }
-}
 /* Sección de productos */
 #productos {
     padding: 2rem;
@@ -478,4 +508,6 @@ footer {
     padding: 1rem;
     text-align: center;
 }
+
+
 
