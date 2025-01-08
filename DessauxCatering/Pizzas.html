@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dessaux Catering - Pizzas a la Parrilla</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1><strong>Dessaux Catering</strong></h1>
+        <img src="Logotipos/Picsart_24-11-13_16-25-14-897.png" alt="LOGO" width="300">
+        <nav>
+            <ul>
+                <li><a href="index.html#productos">Menú</a></li>
+                <li><a href="index.html#nosotros">Nosotros</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+                <li><a href="index.html#ubicacion">Ubicación</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="carrito-items"></ul>
+        <p id="total">Total: $0</p>
+        <button id="vaciar-carrito">Vaciar Carrito</button>
+        <button id="pagar-carrito">Pagar</button>
+    </section>
+
+    <section id="productos">
+        <h2>Pizzas a la Parrilla</h2>
+        <p>Explora nuestras deliciosas pizzas hechas al calor de la parrilla, con ingredientes frescos y sabores únicos.</p>
+        <div class="pizza-contenedor">
+            <div class="pizza-card">
+                <img src="Productos imagen/PizzaMuzza.jpg" alt="Pizza Muzzarella" class="pizza-imagen">
+                <h3>Pizza Muzzarella</h3>
+                <p>La clásica favorita, con queso fundido y masa crujiente.</p>
+                <button class="add-to-cart" data-name="Pizza Muzzarella" data-price="6000">
+                    Agregar al carrito
+                </button>
+            </div>
+            
+            <div class="pizza-card">
+                <img src="Productos imagen/PizzaNapo.jpg" alt="Pizza Napolitana" class="pizza-imagen">
+                <h3>Pizza Napolitana</h3>
+                <p>Con rodajas de tomate fresco, queso y un toque de albahaca.</p>
+                <button class="add-to-cart" data-name="Pizza Napolitana" data-price="7500">
+                    Agregar al carrito
+                </button>
+            </div>
+            
+            <div class="pizza-card">
+                <img src="Productos imagen/PizzaJyM.jpg" alt="Pizza Jamón y Morrones" class="pizza-imagen">
+                <h3>Pizza Jamón y Morrones</h3>
+                <p>Una combinación perfecta de sabores intensos y deliciosos.</p>
+                <button class="add-to-cart" data-name="Pizza Jamón y Morrones" data-price="7800">
+                    Agregar al carrito
+                </button>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Dessaux Catering. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="carrito.js"></script>
+</body>
+</html>

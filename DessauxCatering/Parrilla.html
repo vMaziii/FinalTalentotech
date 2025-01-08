@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dessaux Catering - Gastronomía a pedido</title>
+    <link rel="stylesheet" href="styles.css">
+</head> 
+<body>
+    <header>
+        <h1><strong>Dessaux Catering</strong></h1>
+        <img src="Logotipos\Picsart_24-11-13_16-25-14-897.png" alt="LOGO" width="300">
+        <nav>
+            <ul>
+                <li><a href="index.html#productos">Menú</a></li>
+                <li><a href="index.html#nosotros">Nosotros</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+                <li><a href="index.html#ubicacion">Ubicación</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="carrito-items"></ul>
+        <p id="total">Total: $0</p>
+        <button id="vaciar-carrito">Vaciar Carrito</button>
+        <button id="pagar-carrito">Pagar</button>
+    </section>
+
+    <section id="productos">
+        <h2>Parrilla Variedad</h2>
+        <p>Las mejores carnes a la parrilla asegurado.</p>
+        <div class="pizza-contenedor">
+            <div class="pizza-card">
+                <img src="Productos imagen\VacioParrilla.jpg" alt="Vacio parrillero" class="pizza-imagen">
+                <h3>Vacio estilo Americano</h3>
+                <p>Un tierno vacio a la parrilla, elaborado al estilo Americano.</p>
+                <button class="add-to-cart" data-name="Vacio" data-price="9000">
+                    Agregar al carrito
+                </button>
+            </div>
+
+            <div class="pizza-card">
+                <img src="Productos imagen\LomitoParrilla.jpg" alt="Lomo parrillero" class="pizza-imagen">
+                <h3>Lomito a la Parrilla</h3>
+                <p>Lomito a la parrilla con una receta única y personal.</p>
+                <button class="add-to-cart" data-name="Lomo parrillero" data-price="7800">
+                    Agregar al carrito
+                </button>
+            </div>
+
+            <div class="pizza-card">
+                <img src="Productos imagen\Embutidos.jpg" alt="Embutidos" class="pizza-imagen">
+                <h3>Variedad Embutidos</h3>
+                <p>Chori, salchicha parrillera, chinchu y más...</p>
+                <button class="add-to-cart" data-name="Embutidos variados" data-price="5000">
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Dessaux Catering. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="carrito.js"></script>
+</body>
+</html>
