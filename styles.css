@@ -280,6 +280,41 @@ h2 {
 
 @media (max_width: 768px){
 
+    #carrito {
+        width: 90%; /* Ajusta el ancho */
+        font-size: 0.9em; /* Reduce el tamaño de texto */
+        margin: 0 auto;
+    }
+
+    #carrito table {
+        width: 100%;
+    }
+
+    #carrito table th, #carrito table td {
+        padding: 5px;
+        font-size: 0.8em;
+    }
+
+    #carrito table th {
+        text-align: left; /* Mejor alineación en pantallas pequeñas */
+    }
+
+    .carrito-header {
+        flex-direction: column; /* Cambia a formato vertical */
+        align-items: flex-start;
+    }
+
+    .carrito-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #pagar-carrito {
+        width: 100%; /* Botón ocupa todo el ancho */
+        font-size: 1em;
+    }
+
+
     .mapa{
         height: 100px;
     }
